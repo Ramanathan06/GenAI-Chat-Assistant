@@ -1,0 +1,80 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #1f2937;
+  background: #f3f4f6;
+}
+
+body {
+  margin: 0;
+}
+
+.app-shell {
+  max-width: 860px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.meta {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.chat-window {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.message {
+  padding: 0.75rem;
+  border-radius: 10px;
+}
+
+.message.user {
+  background: #dbeafe;
+  align-self: flex-end;
+}
+
+.message.assistant {
+  background: #e5e7eb;
+  align-self: flex-start;
+}
+
+.message p {
+  margin: 0.3rem 0 0;
+}
+
+.loading {
+  color: #2563eb;
+  font-style: italic;
+}
+
+.input-box {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.input-box input {
+  flex: 1;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  padding: 0.8rem;
+}
+
+.input-box button {
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  padding: 0.8rem 1rem;
+}
+
+.input-box button:disabled {
+  background: #93c5fd;
+}
